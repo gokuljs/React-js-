@@ -13,11 +13,11 @@ class App extends Component{
     // now we are creating monster array 
     this.state={
         monster:[
-          {name:"frank"},
-          {name:"diablo"},
-          {name:"dracula"},
-          {name:"vampire"},
-          {name:"zombie"}
+          {name:"frank", id:"121"},
+          {name:"diablo",id:"122"},
+          {name:"dracula",id:"123"},
+          {name:"vampire",id:"124"},
+          {name:"zombie",id:"125"}
         ]
     };
   }
