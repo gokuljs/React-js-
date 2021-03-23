@@ -1,7 +1,5 @@
 // import React,{component} from 'react';
 import React, { Component } from 'react';
-
-import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component{
@@ -13,18 +11,23 @@ class App extends Component{
     // now we are creating monster array 
     this.state={
         monster:[
-          {name:"frank", id:"121"},
-          {name:"diablo",id:"122"},
-          {name:"dracula",id:"123"},
-          {name:"vampire",id:"124"},
-          {name:"zombie",id:"125"}
+          // {name:"frank", id:"121"},
+          // {name:"diablo",id:"122"},
+          // {name:"dracula",id:"123"},
+          // {name:"vampire",id:"124"},
+          // {name:"zombie",id:"125"}
         ]
     };
   }
+  // which comes under life cycle methods when thr component gets remdered 
   componentDidMount(){
+    // when it renders it calls block of code inside 
     fetch("https://jsonplaceholder.typicode.com/users")
-    .then (response =>response.json)
-  }
+    .then(response => response.json()) // this will return an response in json format 
+    .then(users=> this.setState({monster:users}))// this will return an inside array 
+   }
+
+
   render(){
     return (
       <div className="App">
