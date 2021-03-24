@@ -18,7 +18,4 @@ mypromise
 
 
 //nomrally fetch is lot simliar to promise it return a promise 
-fetch("https://jsonplaceholder.typicode.com/users")
-.then(response => response.json())
-.then(then=>console.log(json))
 

@@ -1,5 +1,6 @@
 // import React,{component} from 'react';
 import React, { Component } from 'react';
+import {CardList} from './components/card-list/card-list.component';
 import "./App.css";
 
 class App extends Component{
@@ -19,7 +20,8 @@ class App extends Component{
         ]
     };
   }
-  // which comes under life cycle methods when thr component gets remdered 
+  // which comes under component life cycle methods when thr component gets rendered 
+  // jsx means html inside js file 
   componentDidMount(){
     // when it renders it calls block of code inside 
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -31,6 +33,9 @@ class App extends Component{
   render(){
     return (
       <div className="App">
+        {/* props will be the any parameter passed inside the cardlist */}
+        <CardList name="msi"><h3>working with props </h3></CardList>
+        {/* // anything written in between cardkist is called props.childreen */}
 
         {
           // we are trying to access the monster array inside this state 
