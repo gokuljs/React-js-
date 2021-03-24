@@ -1,7 +1,11 @@
 .card-list{
+    /* viewport is the actual part wherre users can see the display */
     width:85vw;
     margin:0 auto;
+    /* background-color: blueviolet; */
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
+    /* there are four equal columns */
     grid-gap:20px;
+    /* there is 20 px gap between each column */
 }

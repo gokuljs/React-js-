@@ -34,17 +34,19 @@ class App extends Component{
     return (
       <div className="App">
         {/* props will be the any parameter passed inside the cardlist */}
-        <CardList name="msi"><h3>working with props </h3></CardList>
-        {/* // anything written in between cardkist is called props.childreen */}
+        <CardList monster={this.state.monster}>
+            {/* // anything written in between cardkist is called props.childreen */}
 
-        {
+{/*         
           // we are trying to access the monster array inside this state 
           // we are goign to using map to traverse each element inside an array 
           // normally map takes a function 
           // Anytime you use the map() function inside of render, or you have a list of the same jsx elements one after another, they need a key attribute (and CRA will warn you about it if you miss it
           // key helps the id know which elemnets 
-          this.state.monster.map(monster=>(<h1 key={monster.id}>{monster.name}</h1>))
-        }
+        //   this.state.monster.map(monster=>(<h1 key={monster.id}>{monster.name}</h1>))
+        //  */}
+        </CardList>
+      
 
   </div>
     )
