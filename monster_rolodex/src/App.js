@@ -17,7 +17,8 @@ class App extends Component{
           // {name:"dracula",id:"123"},
           // {name:"vampire",id:"124"},
           // {name:"zombie",id:"125"}
-        ]
+        ],
+        searchfield:"",
     };
   }
   // which comes under component life cycle methods when thr component gets rendered 
@@ -31,8 +32,23 @@ class App extends Component{
 
 
   render(){
+    const {monster,searchfiled}=this.state;
+    // simliar to 
+    // const monster=this.State.monsters;
+    // const searchField=this.state.searchfield;
     return (
+
+     
       <div className="App">
+
+      <input type="search"
+       placeholder="search monsters"
+        onChange={e => {
+          this.setState({searchfield:e.target.value},()=>console.log(this.state))
+          
+        }} />
+
+
         {/* props will be the any parameter passed inside the cardlist */}
         <CardList monster={this.state.monster}>
             {/* // anything written in between cardkist is called props.childreen */}
