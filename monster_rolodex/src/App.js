@@ -32,13 +32,17 @@ class App extends Component{
 
 
   render(){
-    const {monster,searchfiled}=this.state;
+    const {monster,searchfield}=this.state;
+    const filteredmonsters=monster.filter(monster =>
+      monster.name.toLowerCase().includes(searchfield.toLowerCase())
+      )
     // simliar to 
     // const monster=this.State.monsters;
     // const searchField=this.state.searchfield;
     return (
-
-     
+      // destructuring 
+    
+      
       <div className="App">
 
       <input type="search"
@@ -50,7 +54,7 @@ class App extends Component{
 
 
         {/* props will be the any parameter passed inside the cardlist */}
-        <CardList monster={this.state.monster}>
+        <CardList monster={filteredmonsters}>
             {/* // anything written in between cardkist is called props.childreen */}
 
 {/*         
