@@ -1,6 +1,7 @@
 // import React,{component} from 'react';
 import React, { Component } from 'react';
 import {CardList} from './components/card-list/card-list.component';
+import {SearchBox} from './components/search-box/search-box.component';
 import "./App.css";
 
 class App extends Component{
@@ -45,13 +46,22 @@ class App extends Component{
       
       <div className="App">
 
-      <input type="search"
+      {/* <input type="search"
        placeholder="search monsters"
         onChange={e => {
           this.setState({searchfield:e.target.value},()=>console.log(this.state))
           
-        }} />
+        }} /> */}
 
+        {/* creating a reusable searchbox component that can be used again and again  */}
+        
+        <SearchBox
+        placeholder="search monsters"
+        handlechange={e => {
+          this.setState({searchfield:e.target.value},()=>console.log(this.state))
+          
+        }}
+        />
 
         {/* props will be the any parameter passed inside the cardlist */}
         <CardList monster={filteredmonsters}>
