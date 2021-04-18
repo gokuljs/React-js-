@@ -16,3 +16,6 @@ https://babeljs.io/docs/en/editors/
 
 ### community support resources
 https://reactjs.org/community/support.html
+
+### Developer tool extension 
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
