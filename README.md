@@ -9,3 +9,6 @@ https://jsonplaceholder.typicode.com/users
 
 ### Material_ui
 https://material-ui.com/
+
+### Syntax Highlighting
+https://babeljs.io/docs/en/editors/
