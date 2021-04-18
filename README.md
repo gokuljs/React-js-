@@ -12,3 +12,7 @@ https://material-ui.com/
 
 ### Syntax Highlighting
 https://babeljs.io/docs/en/editors/
+
+
+### community support resources
+https://reactjs.org/community/support.html
