@@ -7,6 +7,9 @@ https://reactdesktop.js.org/
 https://opensource.facebook.com/
 https://jsonplaceholder.typicode.com/users
 
+### Handling events in react.js 
+https://reactjs.org/docs/handling-events.html
+
 
 ### firebase docs
 https://firebase.google.com/docs?authuser=0
