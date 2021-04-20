@@ -28,7 +28,8 @@ https://reactjs.org/community/support.html
 https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
 
 ## Generating a new SSH key and adding it to the ssh-agent
-https://docs.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+https://docs.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent \
+https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories
 
 
 
