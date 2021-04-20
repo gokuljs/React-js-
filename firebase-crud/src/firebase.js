@@ -1,4 +1,5 @@
  // Your web app's Firebase configuration
+ import * as firebase from 'firebase'; 
  var firebaseConfig = {
     apiKey: "AIzaSyCKfztB2lPEtIJU1rwKzkjWvspVsMuOT7o",
     authDomain: "react-crud-16638.firebaseapp.com",
