@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  font-family: 'Alex Brush', cursive;
+  font-size: 72px;
+  margin-bottom: -5px;
+  color: #61dafb;
+}
