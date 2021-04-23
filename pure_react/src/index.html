@@ -8,11 +8,38 @@
 </head>
 <body>
     <div id="root">
-
+        React not rendered
     </div>
     <!-- including two packages react and react dom -->
     <!-- below two links will easily add both the react packages two the project -->
     <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
+    <script>
+        const person=()=>{
+            return React.createElement("div",{},[
+            React.createElement("h1",{},"react"),
+            React.createElement("p",{},"react"),
+            React.createElement("h1",{},"reactjs"),
+            React.createElement("h3",{},"lalal"),
+
+            ]
+            
+            )
+        }
+        // creating a functional component
+        const App=()=>{
+            // os simliar to creating elemens in jsx but here we are suing vanilla
+            //React.createElement("element we want to create",{attributes like class name },any childreen we want to nest inside this element);
+            return React.createElement("div",{},
+            React.createElement("h1",{},["react app is rendered",
+            React.createElement(person),
+            React.createElement(person),
+
+        ]));
+        }
+        // reactdom is used to render anything related to webpage where react js is an engine 
+        // same ways goes for react native for rendering contents in phone 
+        ReactDOM.render(React.createElement(App),document.getElementById("root"))
+    </script>
 </body>
 </html>
