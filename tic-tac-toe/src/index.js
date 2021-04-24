@@ -2,20 +2,26 @@ import React from 'react'; // importing react package
 import ReactDOM from 'react-dom'; // importing react-dom package
 import './index.css';// importing css pacakge 
 
-class Square extends React.Component {
+class Square extends React.Component { // square component just renders a single button 
+    constructor(props){
+        super(props);
+        this.state={ // normally to remember states in react uses this.state
+            value:null,
+        }
+    }
     render() {
       return (
-        <button className="square">
-          {/* TODO */}
+        <button className="square" onClick={()=>this.setState({value:"X"})}>
+          {this.state.value}
         </button>
       );
     }
-  }
+}
   
-  class Board extends React.Component {
-    renderSquare(i) {
-      return <Square />;
-    }
+class Board extends React.Component { // the board renders 9 squares 
+    renderSquare(i) { // passing values from the board to the square using props 
+      return <Square value={i} />;//in react information is passed using props
+} 
   
     render() {
       const status = 'Next player: X';
@@ -41,9 +47,9 @@ class Square extends React.Component {
         </div>
       );
     }
-  }
+}
   
-  class Game extends React.Component {
+class Game extends React.Component { // the game component renders placeholder witha board with placeholder values 
     render() {
       return (
         <div className="game">
@@ -57,7 +63,7 @@ class Square extends React.Component {
         </div>
       );
     }
-  }
+}
   
   // ========================================
   
