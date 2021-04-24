@@ -1,7 +1,7 @@
 import React from 'react'; // importing react package 
 import ReactDOM from 'react-dom'; // importing react-dom package
 import './index.css';// importing css pacakge 
-
+// child component
 class Square extends React.Component { // square component just renders a single button 
     constructor(props){
         super(props);
@@ -17,10 +17,20 @@ class Square extends React.Component { // square component just renders a single
       );
     }
 }
-  
+// parent component
 class Board extends React.Component { // the board renders 9 squares 
+    constructor(props){
+        super(props);
+        this.state={
+            squares: Array(9).fill(null)
+        }
+
+    }
     renderSquare(i) { // passing values from the board to the square using props 
-      return <Square value={i} />;//in react information is passed using props
+      return <Square 
+      value={this.state.squares[i]}
+      onClick={()=>this.handleclick(i)}    
+      />;//in react information is passed using props
 } 
   
     render() {
