@@ -2,39 +2,43 @@ import React from 'react'; // importing react package
 import ReactDOM from 'react-dom'; // importing react-dom package
 import './index.css';// importing css pacakge 
 // child component
-class Square extends React.Component { // square component just renders a single button 
-    constructor(props){
-        super(props);
-        this.state={ // normally to remember states in react uses this.state
-            value:null,
-        }
+function Square(props) {
+    return (
+      <button className="square" onClick={props.onClick}>
+        {props.value}
+      </button>
+    );
+  }
+  
+  class Board extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        squares: Array(9).fill(null),
+        xIsNext: true,
+      };
     }
-    render() {
+  
+    handleClick(i) {
+      const squares = this.state.squares.slice();
+      squares[i] = this.state.xIsNext ? 'X' : 'O';
+      this.setState({
+        squares: squares,
+        xIsNext: !this.state.xIsNext,
+      });
+    }
+  
+    renderSquare(i) {
       return (
-        <button className="square" onClick={()=>this.setState({value:"X"})}>
-          {this.state.value}
-        </button>
+        <Square
+          value={this.state.squares[i]}
+          onClick={() => this.handleClick(i)}
+        />
       );
     }
-}
-// parent component
-class Board extends React.Component { // the board renders 9 squares 
-    constructor(props){
-        super(props);
-        this.state={
-            squares: Array(9).fill(null)
-        }
-
-    }
-    renderSquare(i) { // passing values from the board to the square using props 
-      return <Square 
-      value={this.state.squares[i]}
-      onClick={()=>this.handleclick(i)}    
-      />;//in react information is passed using props
-} 
   
     render() {
-      const status = 'Next player: X';
+      const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
   
       return (
         <div>
@@ -57,9 +61,9 @@ class Board extends React.Component { // the board renders 9 squares
         </div>
       );
     }
-}
+  }
   
-class Game extends React.Component { // the game component renders placeholder witha board with placeholder values 
+  class Game extends React.Component {
     render() {
       return (
         <div className="game">
@@ -73,7 +77,7 @@ class Game extends React.Component { // the game component renders placeholder w
         </div>
       );
     }
-}
+  }
   
   // ========================================
   
@@ -81,4 +85,5 @@ class Game extends React.Component { // the game component renders placeholder w
     <Game />,
     document.getElementById('root')
   );
+  
   
