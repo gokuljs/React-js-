@@ -78,7 +78,7 @@ function Square(props) {
       );
     }
   }
-  
+//   see from handel click
   // ========================================
   
   ReactDOM.render(
