@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from 'react'; // importing react package 
+import ReactDOM from 'react-dom'; // importing react-dom package
+import './index.css';// importing css pacakge 
 
 class Square extends React.Component {
     render() {
       return (
         <button className="square">
-          {this.props.value}
+          {/* TODO */}
         </button>
       );
     }
@@ -14,7 +14,7 @@ class Square extends React.Component {
   
   class Board extends React.Component {
     renderSquare(i) {
-      return <Square value={i} />;
+      return <Square />;
     }
   
     render() {
