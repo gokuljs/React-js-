@@ -9,7 +9,7 @@ class App extends React.Component {
       meaningOfLife:47,
     }
   }
-
+// state updates are asynchronous 
   handleClick=()=>{
   // one rule always to be followed in react 
   // in your setstate calls when ever you use this.state or props then we dont pass it in form of objects like given below
@@ -18,7 +18,7 @@ class App extends React.Component {
     this.setState((prevState,prevProps)=>{
       // this gaurantees the latest previouse state before update 
       return {meaningOfLife:this.state.meaningOfLife+1}
-
+// state updates are asynchronous so add in a function after that where you can use that updated state 
     },()=>console.log(this.state.meaningOfLife))
   }
   render(){
