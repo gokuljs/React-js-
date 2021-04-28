@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 "# React-js-" 
 
 ### References 
@@ -37,10 +37,5 @@ https://docs.github.com/en/github/getting-started-with-github/about-remote-repos
 
 
 
-=======
-"# React-js-" 
 
-### References 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript \n
-https://reactjs.org/tutorial/tutorial.html
->>>>>>> Update README.md
+
