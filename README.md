@@ -8,6 +8,9 @@ https://reactdesktop.js.org/
 https://opensource.facebook.com/
 https://jsonplaceholder.typicode.com/users
 
+### Lifecycle method diagram 
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
 ### Handling events in react.js 
 https://reactjs.org/docs/handling-events.html
 
