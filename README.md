@@ -17,6 +17,9 @@ https://reactjs.org/docs/handling-events.html
 ### npm audit fix
 https://docs.npmjs.com/cli/v7/commands/npm-audit
 
+### Sass
+https://sass-lang.com/
+
 
 ### firebase docs
 https://firebase.google.com/docs?authuser=0
