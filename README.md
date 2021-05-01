@@ -20,6 +20,8 @@ https://docs.npmjs.com/cli/v7/commands/npm-audit
 ### Sass
 https://sass-lang.com/
 
+### Template literals (Template strings)
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 
 ### firebase docs
 https://firebase.google.com/docs?authuser=0
