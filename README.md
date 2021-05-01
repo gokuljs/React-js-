@@ -37,6 +37,9 @@ https://reactjs.org/community/support.html
 ### Developer tool extension 
 https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
 
+### Illustartion vectors 
+https://www.freepik.com/search?dates=any&format=search&from_query=Illustrations&page=1&query=Illustrations&sort=popular&type=vector \
+https://graphicriver.net/presentation-templates
 ## Generating a new SSH key and adding it to the ssh-agent
 https://docs.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent \
 https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories
