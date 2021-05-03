@@ -7,13 +7,38 @@
     justify-content: center;
     border: 1px solid black;
     margin: 0 7.5px 15px;
-    background-position: center;
-    background-size: cover;
+    overflow: hidden; // this is to prevent overflow of the image during hover effect of an image 
+  // &:hover{
+  //   cursor:pointer; // means instaed of arrow we want a fingure 
+  //   & .background-image{
+  //     transform:scale(1.1);
+  //     transition : transform 6s cubic-bezier(0.25,0.45,0.45,0.95)
 
-    &.large{
+  //   }
+  // }
+
+  &.large{
       height:380px;
     }
+  &:hover {
+    cursor: pointer;
+
+    & .background-image {
+      transform: scale(1.1);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
+
+    & .content {
+      opacity: 0.9;
+    }
+  }
   
+    .background-image{
+      width:100%;
+      height:100%;
+      background-position: center;
+    background-size: cover;
+    }
     &:first-child {
       margin-right: 7.5px;
     }
@@ -32,6 +57,7 @@
       border: 1px solid black;
       background-color: white;
       opacity: 0.7;
+      position: absolute;
   
       .title {
         font-weight: bold;
