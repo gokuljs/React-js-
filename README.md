@@ -10,11 +10,14 @@
 
 
 ### References 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript \
+<ul>
+
+<li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript </li>
 https://reactjs.org/tutorial/tutorial.html \
 https://reactdesktop.js.org/
 https://opensource.facebook.com/
 https://jsonplaceholder.typicode.com/users
+</ul>
 
 ### Lifecycle method diagram 
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
