@@ -13,10 +13,10 @@
 <ul>
 
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript </li>
-https://reactjs.org/tutorial/tutorial.html \
-https://reactdesktop.js.org/
-https://opensource.facebook.com/
-https://jsonplaceholder.typicode.com/users
+<li> https://reactjs.org/tutorial/tutorial.html </li>
+<li> https://reactdesktop.js.org/</li>
+<li> https://opensource.facebook.com/</li>
+<li> https://jsonplaceholder.typicode.com/users</li>
 </ul>
 
 ### Lifecycle method diagram 
