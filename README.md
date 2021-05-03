@@ -10,6 +10,8 @@ https://jsonplaceholder.typicode.com/users
 
 ### Lifecycle method diagram 
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+![image](https://user-images.githubusercontent.com/51263906/116846861-eb284c00-ac06-11eb-9b94-83107706034d.png)
+
 
 ### Handling events in react.js 
 https://reactjs.org/docs/handling-events.html
