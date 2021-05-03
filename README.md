@@ -1,7 +1,7 @@
 
 "# React-js-" 
 
-<img style="align:center" src="https://user-images.githubusercontent.com/51263906/116847840-02683900-ac09-11eb-86d4-2e9e291ee73a.png"/>
+<img style="margin-left:auto; margin-right:auto" src="https://user-images.githubusercontent.com/51263906/116847840-02683900-ac09-11eb-86d4-2e9e291ee73a.png"/>
 
 
 
