@@ -1,7 +1,8 @@
 
 "# React-js-" 
-
+<div align=”center”>
 ![image](https://user-images.githubusercontent.com/51263906/116847594-7a822f00-ac08-11eb-85de-4aa0b6811145.png)
+</div>
 
 
 ### References 
