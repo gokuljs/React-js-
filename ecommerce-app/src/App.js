@@ -13,8 +13,11 @@ const HatsPage=()=>(
 function App() {
   return (
     <div >
+    {/* swicth component is used by wrapping all route components */}
+   
     <Switch>
-      {/* exact is an true or false argument */}
+
+    {/* exact is an true or false argument */}
     {/* component is the ui which we want to render  */}
     {/* path you give the your own path */}
   <Route exact path='/' component={HomePage} />
