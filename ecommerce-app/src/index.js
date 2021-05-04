@@ -8,6 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     {/* now we are passing all the react router functionality to browser router */}
+    {/* this component gives all the functionality to all the components sitting between them  */}
     <App />
     </BrowserRouter>
     
