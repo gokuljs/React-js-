@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
+import {Route} from 'react-router-dom';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const HomePage=(props)=>{
+  console.log(props)
+  return(
+  
+  <div>
+    <h1>welcome to home page</h1>
+  </div>
+);
+}
+const TopicList=()=>{return(
+  <div>
+    <h1>list of topic list page</h1>
+  </div>
+);
+}
+const TopicDetail=()=>{return(
+  <div>
+    <h1>
+      list of topic details page
+    </h1>
+  </div>
+);
 }
 
+function App(){
+  return(
+    <div>
+      <Route exact path="/" component={HomePage}/>
+      <Route exact path="/topics" component={TopicList}/> 
+       <Route exact path="/topics/:topicId" component={TopicDetail}/>
+    </div>
+  )
+}
 export default App;
