@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route,Link} from 'react-router-dom';
 import './App.css';
 
 const HomePage=(props)=>{
@@ -7,20 +7,30 @@ const HomePage=(props)=>{
   return(
   
   <div>
-    <h1>welcome to home page</h1>
+  {/* link is the special component that react touter dom gives us to property dynamically takes us this link to  */}
+  {/* <Link to="/topics"> topics </Link> this is one way of doing dynamic navigation */}
+  {/* major diffrence between this and the anchor tag is we dont neeed to render the entire application */}
+  {/* here it hijacks the links and decides what part of dom should be showed and what shouldnt be because the react is single page application  */}
+  {/* other way using dynamic naviagtion */}
+  <button onClick={()=>props.history.push('/topics')}>Topics</button>
+  <h1>welcome to home page</h1>
   </div>
 );
 }
-const TopicList=()=>{return(
+const TopicList=(props)=>{
+  console.log(props)
+  return(
   <div>
     <h1>list of topic list page</h1>
   </div>
 );
 }
-const TopicDetail=()=>{return(
+const TopicDetail=(props)=>{
+  console.log(props)
+  return(
   <div>
     <h1>
-      list of topic details page
+      list of topic details page: {props.match.params.topicId}
     </h1>
   </div>
 );
