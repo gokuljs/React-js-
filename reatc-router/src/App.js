@@ -7,13 +7,16 @@ const HomePage=(props)=>{
   return(
   
   <div>
+  {/* history prop and link component */}
   {/* link is the special component that react touter dom gives us to property dynamically takes us this link to  */}
   {/* <Link to="/topics"> topics </Link> this is one way of doing dynamic navigation */}
   {/* major diffrence between this and the anchor tag is we dont neeed to render the entire application */}
   {/* here it hijacks the links and decides what part of dom should be showed and what shouldnt be because the react is single page application  */}
   {/* other way using dynamic naviagtion */}
+  {/* this is simliar to using link but we have more control */}
   <button onClick={()=>props.history.push('/topics')}>Topics</button>
   <h1>welcome to home page</h1>
+  {/* location props is used for getting current path */}
   </div>
 );
 }
