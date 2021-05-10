@@ -1,14 +1,11 @@
 import React from 'react';
 import {Switch,Route} from 'react-router-dom';
+import ShopPage from './pages/shop/shop.component';
 import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
 
-const HatsPage=()=>(
-  <div>
-    <h1>Hats page</h1>
-  </div>
-);
+
 
 function App() {
   return (
@@ -21,7 +18,7 @@ function App() {
     {/* component is the ui which we want to render  */}
     {/* path you give the your own path */}
   <Route exact path='/' component={HomePage} />
-  <Route path='/hats' component={HatsPage} />
+  <Route path='/shop' component={ShopPage} />
 
     </Switch>
   
